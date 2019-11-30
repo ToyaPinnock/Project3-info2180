@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link href="issue.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="sidenav">
+            <div><a href="profile.phph">Home</a></div>
+            <div><a id="adduser" href="adduser.html">Add User</a></div>
+            <div><a id="addIssue" href="addissue.html">New Issue</a></div>
+            <div><a href="logout.php">Log Out</a></div>
+        </div>
+    </nav>
+    <div id="form">
+
+        <div>
+            <h1>Create Issue</h1>
+        </div>
+
+        <form method='get' action='pushIssue.php'>
+            <div>
+                <label>Title: </label>
+                <input type='text' name='title' required>
+            </div>
+            <br>
+            <div>
+                <label>Description: </label>
+                <textarea type='text' name='description' required></textarea>
+            </div>
+            <br>
+            <div>
+                <label>Type: </label>
+                <input type='text' name='type' placeholder="Bug,Proposal or Task">
+            </div>
+            <br>
+            <div>
+                <label>Priority: </label>
+                <input type='text' name='priority' placeholder="Minor,Major,Critical">
+            </div>
+            <br>
+            <div>
+                <label>Assigned to: </label>
+                <input type='text' name='assigned'>
+            </div>
+            <br>
+            <div>
+                <input id="submit" type='submit'>
+            </div>
+        </form>
+    </div>
+    <div id='result'>
+
+    </div>
+
+</body>
+
+</html>

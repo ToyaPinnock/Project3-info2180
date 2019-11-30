@@ -1,0 +1,67 @@
+.head-cont {
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    margin: 0;
+}
+
+img {
+    border-radius: 50%;
+}
+
+h1 {
+    text-align: left;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: row;
+    background-color: goldenrod;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+th {
+    background-color: #818181;
+}
+
+table,
+td,
+th {
+    border: solid 1px;
+    border-collapse: collapse;
+    padding: 5px;
+    padding-right: 20px;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    background-color: lightgray;
+}
+
+tr {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    background-image: url("image/white.jpg");
+}

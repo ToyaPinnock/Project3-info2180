@@ -9,19 +9,33 @@ if(isset($_SESSION["login_user"])){
 <html>
     <head>
         <title></title>
+        <link href="login.css" rel="stylesheet">
 
     </head>
     <body>
-        <div id="Login">
-            <h2>Login to BugMe</h2>
+        <div id="login">
+            <div class="head-log">
+                <div>
+                <img src="image/bug.jpg" alt="bug logo" weight=80px height=40px>
+            </div>
+                <div>
+                <h2>Login to BugMe</h2>
+            </div>
+
+            </div>
             <form action="login.php" method="post">
             <label>Email: </label>
-                <input id="email" name="email" placeholder="Email" type="email" required>
+            <br>
+                <input id="email" name="email" placeholder="name@bugme.com" type="email" required>
+            <br>
             <label> Password: </label>
-                <input id="password" name="password" type="password" required>
-            <input name="submit" type="submit" value="login">
-            <span> <?php echo $error; ?> </span>
+            <br>
+                <input id="password" name="password" type="password" placeholder="*******" required>
+            <br>
+            <input id="submit" name="submit" type="submit" value="login" >
+
             </form>
+            <span> <?php echo $error; ?> </span>
         </div>
     </body>
 </html>

@@ -8,9 +8,10 @@ $date= date("Y/m/d")." ". date("h:i.sa");
 static $a=0;
 $ticket="#". $a++;
 
-$stmt = $conn->prepare("INSERT INTO issues (title, description, type, priority,
+$stmt = $conn->prepare("INSERT INTO issues ( ,title, description, type, priority,
         status, assigned_to, created_by, created, updated) VALUES (:title, :description, :type, :priority,
         :status, :assigned_to, :created_by, :created, :updated)");
+
     $newtitle=$ticket. " " .$_GET['title'];
     $stmt->bindParam(':title', $newtitle);
     $stmt->bindParam(':description', $_GET["description"]);

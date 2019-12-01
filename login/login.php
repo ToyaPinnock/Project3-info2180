@@ -26,7 +26,7 @@ if (isset($_POST['submit'])){
 
         if($stmt->fetch()){
             $_SESSION['login_user'] = $email;
-            header("location:profile.php");
+            header("location:main.php");
         }
         else{
             $error="email or password is invalid";

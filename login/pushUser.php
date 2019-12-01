@@ -11,5 +11,5 @@ $stmt->bindParam(':email', $_GET['email']);
 
 $stmt->execute();
 
-header('location:profile.php');
+header('location:main.php');
  ?>

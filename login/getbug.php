@@ -1,3 +1,4 @@
+
 <?php
 require 'dbconnect.php';
 
@@ -11,7 +12,7 @@ echo "<th>Date posted</th>";
 echo "</tr>";
 while ($row = $sql->fetch()) {
   echo "<tr>";
-  echo "<td>#".$row['id']." "."<button class='problemButton' value=".$row['id'].">".$row['title']."</button></a></td>";
+  echo "<td>#".$row['id']." "."<button class='problemButton' value=".$row['id'].">".$row['title']."</button></td>";
   echo "<td>".$row['type']."</td>";
   echo "<td>".$row['status']."</td>";
   echo "<td>".$row['assigned_to']."</td>";
@@ -19,5 +20,4 @@ while ($row = $sql->fetch()) {
   echo "</tr>";
 }
 echo "</table>";
-echo "<script src='buttons.js' type='text/javascript'></script>"
  ?>
